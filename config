@@ -1,11 +1,38 @@
+# MacOS Icon Settings
+macos-icon = custom-style
+macos-icon-frame = aluminum
+macos-icon-ghost-color = FFFFFF
+macos-icon-screen-color = 000000
+
+# Font settings
+font-family = JetBrainsMono NF Regular
+
+# Background Settings
+background-opacity = 0.35
+
 command = /bin/zsh -c "tmux new -A -s Prime"
 copy-on-select = true
 
 macos-option-as-alt = true
 window-save-state = always
 
+# Jump to start of last word
+keybind = alt+left=esc:B
+
+# Jump to start of line (macOS only)
+keybind = super+left=esc:OH
+
+# Jump to end of next word
+keybind = alt+right=esc:F
+
+# Jump to end of line (macOS only)
+keybind = super+right=esc:OF
+
+# To backspace last word
+keybind = alt+backspace=text:\x1b\x7f
+
 # To delete from the current position to the start of the line
-keybind = super+backspace=esc:w
+keybind = super+backspace=text:\x15
 
 # TMUX integration considering that my leader key is ctrl + b
 
